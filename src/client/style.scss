@@ -4,5 +4,22 @@ html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body{
-  padding:20px;
+  padding: 0px;
+  marign: 0px;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem, 5rem, 5rem;
+}
+
+.search-container, .product-container, .cart-container {
+  border: 1px solid #16e2af;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0, 1rem, 0, 1rem;
+  width: 30%;
 }
