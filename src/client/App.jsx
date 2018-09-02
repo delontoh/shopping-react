@@ -27,13 +27,13 @@ class App extends React.Component {
   async clickHandler(event) {
     const response = await fetch(`/api/query?search=${this.props.search}`);
     const data = await response.json();
-    this.setState({product: data.items});
+    this.setState({products: data.items});
   };
 
   displayProduct(index) {
     this.setState(({products}) => {
       const selectedProduct = products[index];  // get element of product array from index
-      selectedProduct['index'] = index;
+      selectedProduct['index'] = index; // instantiate selectedProduct obj with index key
       return {selectedProduct};
     });
   };

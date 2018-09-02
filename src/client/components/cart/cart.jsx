@@ -7,7 +7,7 @@ class Cart extends React.Component {
         const {cart, removeFromCart, addFromCart} = this.props;
         const cartItems = cart.map((item, index) => (
             <div key={index}>
-                <div>{item.name}</</div>
+                <div>{item.name}</div>
 
                 <div>
                     <button onClick= {() => removeFromCart(index)}>-</button>
